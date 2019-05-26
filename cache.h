@@ -102,7 +102,10 @@
 enum cache_policy {
   LRU,		/* replace least recently used block (perfect LRU) */
   Random,	/* replace a random block */
-  FIFO 		/* replace the oldest block in the set */
+  FIFO,		/* replace the oldest block in the set */
+  LIFO,   /* replace the newest block in the set */
+  MRU,    /* replace the most recently used block in the set */
+  LFU,    /* replace the least frequently used block in the set */
 };
 
 /* block status values */

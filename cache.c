@@ -409,6 +409,9 @@ cache_char2policy(char c)		/* replacement policy as a char */
   case 'l': return LRU;
   case 'r': return Random;
   case 'f': return FIFO;
+  case 'i': return LIFO;
+  case 'm': return MRU;
+  case 'u': return LFU;
   default: fatal("bogus replacement policy, `%c'", c);
   }
 }
