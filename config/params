@@ -1,0 +1,5 @@
+./sim-cache  ./tests/bin.little/test-fmath 
+-cache:dl1 dl1:128:32:4:i
+-cache:dl2 ul2:1024:64:4:i
+-cache:il1 il1:512:32:1:i
+-cache:il2 ul2:1024:64:4:i 
