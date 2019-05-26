@@ -430,6 +430,9 @@ cache_config(struct cache_t *cp,	/* cache instance */
 	  cp->policy == LRU ? "LRU"
 	  : cp->policy == Random ? "Random"
 	  : cp->policy == FIFO ? "FIFO"
+    : cp->policy == LIFO ? "LIFO"
+    : cp->policy == MRU ? "MRU"
+    : cp->policy == LFU ? "LFU"
 	  : (abort(), ""));
 }
 
@@ -584,6 +587,13 @@ cache_access(struct cache_t *cp,	/* cache to access */
       repl = CACHE_BINDEX(cp, cp->sets[set].blks, bindex);
     }
     break;
+  case MRU:
+  case LIFO:
+    repl = cp->sets[set].way_head;
+    // No need to update_way_list because we are at the head
+    break;
+  // case LFU:
+  //   repl = cp->sets[set].way_head;
   default:
     panic("bogus replacement policy");
   }
