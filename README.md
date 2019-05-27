@@ -1,3 +1,3 @@
 # SimpleScaler Caching Alogrithms
 
-This is a repository for cache modifactions to the SimpleScalar program.
+This is a repository for cache modifications to the SimpleScalar program.
