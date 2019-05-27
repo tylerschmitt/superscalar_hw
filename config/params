@@ -1,5 +1,5 @@
-./sim-cache  ./tests/bin.little/test-fmath 
--cache:dl1 dl1:128:32:4:i
--cache:dl2 ul2:1024:64:4:i
--cache:il1 il1:512:32:1:i
--cache:il2 ul2:1024:64:4:i 
+./sim-cache -cache:dl1 dl1:128:32:4:l -cache:dl2 ul2:1024:64:4:l -cache:il1 il1:512:32:1:l -cache:il2 ul2:1024:64:4:l ./tests/bin.little/test-fmath 
+./sim-cache -cache:dl1 dl1:128:32:4:r -cache:dl2 ul2:1024:64:4:r -cache:il1 il1:512:32:1:r -cache:il2 ul2:1024:64:4:r ./tests/bin.little/test-fmath 
+./sim-cache -cache:dl1 dl1:128:32:4:f -cache:dl2 ul2:1024:64:4:f -cache:il1 il1:512:32:1:f -cache:il2 ul2:1024:64:4:f ./tests/bin.little/test-fmath 
+./sim-cache -cache:dl1 dl1:128:32:4:i -cache:dl2 ul2:1024:64:4:i -cache:il1 il1:512:32:1:i -cache:il2 ul2:1024:64:4:i ./tests/bin.little/test-fmath 
+./sim-cache -cache:dl1 dl1:128:32:4:m -cache:dl2 ul2:1024:64:4:m -cache:il1 il1:512:32:1:m -cache:il2 ul2:1024:64:4:m ./tests/bin.little/test-fmath 
